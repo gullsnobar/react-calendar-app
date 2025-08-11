@@ -45,34 +45,31 @@ const CalendarGrid = ({
       const isSelected = selectedDate === date;
 
       days.push(
-        <div
-          key={day}
-          onClick={() => onDateClick(day)}
-          className={`p-3 cursor-pointer border-2 border-transparent hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-200 relative ${
-            isToday ? 'bg-blue-100 dark:bg-blue-900' : ''
-          } ${isSelected ? 'border-blue-500 bg-blue-50 dark:bg-gray-700' : ''}`}
-        >
-          <div className={`font-medium ${isToday ? 'text-blue-600 dark:text-blue-400' : ''}`}>
-            {day}
-          </div>
-          {dayEvents.length > 0 && (
-            <div className="mt-1 space-y-1">
-              {dayEvents.slice(0, 3).map((event) => (
-                <div
-                  key={event.id}
-                  className="text-xs bg-blue-500 text-white rounded px-2 py-1 truncate"
-                  title={event.title}
-                >
-                  {event.title}
-                </div>
-              ))}
-              {dayEvents.length > 3 && (
-                <div className="text-xs text-gray-500 font-medium">
-                  +{dayEvents.length - 3} more
-                </div>
-              )}
-            </div>
-          )}
+      <div
+      key={day}
+      onClick={() => onDateClick(day)}
+      className={`p-3 cursor-pointer border-2 border-transparent hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-200 relative ${
+      isToday ? 'bg-blue-100 dark:bg-blue-900' : ''
+      } ${isSelected ? 'border-blue-500 bg-blue-50 dark:bg-gray-700' : ''}`}>
+      <div className={`font-medium ${isToday ? 'text-blue-600 dark:text-blue-400' : ''}`}>
+      {day}
+      </div>
+      {dayEvents.length > 0 && (
+      <div className="mt-1 space-y-1">
+      {dayEvents.slice(0, 3).map((event) => (
+      <div
+      key={event.id}
+      className="text-xs bg-blue-500 text-white rounded px-2 py-1 truncate"
+      title={event.title}>
+      {event.title}
+      </div>
+      ))}
+      {dayEvents.length > 3 && (
+      <div className="text-xs text-gray-500 font-medium">
+      +{dayEvents.length - 3} more
+      </div>
+      )}
+    </div>)}
         </div>
       );
     }
