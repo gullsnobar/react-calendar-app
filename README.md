@@ -27,7 +27,5 @@ Utility functions (dateUtils.js, localStorageUtils.js)
 
 Tailwind CSS setup guidance (Properly installed via google but its not imported properly, I use chatgpt for guidance)
 
-Component structure suggestions
-
 Facing errors in CalenderApp components, So I fix bug with the help of chatgpt.
 
