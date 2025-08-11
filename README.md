@@ -1,6 +1,6 @@
 # React Calendar App
 
-A simple calendar application built with **React**, **Vite**, **Tailwind CSS**, and **Lucide Icons**.  
+A simple calendar application built with React, Vite, Tailwind CSS, and Lucide Icons.  
 You can create, edit, and delete events, switch between dark/light mode, and choose between grid or list view.  
 All events are saved locally in your browser.
 
